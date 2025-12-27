@@ -1,0 +1,9 @@
+<h2>Study Materials</h2>
+<a href="/upload/">Upload</a>
+<hr>
+{% for m in materials %}
+<h3>{{ m.title }}</h3>
+<p>{{ m.subject }} - {{ m.description }}</p>
+<a href="{{ m.file.url }}">Download</a>
+<hr>
+{% endfor %}

@@ -1,0 +1,9 @@
+<h2>Upload Material</h2>
+<form method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+<input name="title" placeholder="Title"><br><br>
+<input name="subject" placeholder="Subject"><br><br>
+<textarea name="description"></textarea><br><br>
+<input type="file" name="file"><br><br>
+<button type="submit">Upload</button>
+</form>
